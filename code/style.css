@@ -1,0 +1,82 @@
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-mode input,
+.dark-mode button,
+.dark-mode #suggestions {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container h1,
+.container div {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.container input{
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+
+.container button {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin: 0 auto;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+#result {
+  margin-top: 5rem;
+}
+
+.search-container {
+  position: relative;
+  width: 60%;
+  margin: 0 auto;
+}
+
+#suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 60%;
+  background: white;
+  border: 1px solid #ccc;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 20%;
+  max-height: 200px;
+  overflow-y: auto;
+  display: none;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+#suggestions li {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+#suggestions li:hover {
+  background: #f0f0f0;
+}
